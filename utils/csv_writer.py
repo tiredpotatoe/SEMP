@@ -19,10 +19,19 @@ def write_books_csv(books: list[dict], path: Path) -> None:
 
     path.parent.mkdir(parents=True, exist_ok=True)
 
-    fieldnames = books[0].keys()
+    fieldnames = set()
+    for book in books:
+        fieldnames.update(book.keys())
+
+    fieldnames = list(fieldnames)
 
     with open(path, mode="w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=fieldnames)
+        writer = csv.DictWriter(
+            f,
+            fieldnames=fieldnames,
+            restval="Unknown"
+        )
+
         writer.writeheader()
         writer.writerows(books)
 

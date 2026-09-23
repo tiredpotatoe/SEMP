@@ -1,9 +1,9 @@
 {
     "openlibrary_search_url": "https://openlibrary.org/search.json",
     "search_query": "book",
-    "fields": "title,author_name,first_publish_year",
+    "fields": "*",
     "fetch_limit": 50,
-    "request_timeout": 10,
+    "request_timeout": 15,
     "year_cutoff": 2000,
     "output_csv_path": "output/fetched_books.csv"
   }
