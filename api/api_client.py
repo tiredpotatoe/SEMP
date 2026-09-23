@@ -4,14 +4,16 @@ import logging
 logger = logging.getLogger(__name__)
 
 
-def fetch_books(search_url, query, limit, request_timeout = 10):
+def fetch_books(search_url, query, limit, fields, request_timeout):
     """
     Fetches books from the OpenLibrary search endpoint.
 
     Args:
-        search_url: the OpenLibrary search API base URL.
-        query: search term (e.g. a subject/topic).
-        limit: max number of books to request.
+        search_url: The OpenLibrary search API base URL.
+        query: Search term (e.g. a subject/topic).
+        limit: Max number of books to request.
+        fields: Comma-separated fields to request from the API.
+        request_timeout: Timeout for the API request, in seconds (default: 10).
 
     Returns:
         A list of raw book dicts from the API's "docs" field.
@@ -20,7 +22,7 @@ def fetch_books(search_url, query, limit, request_timeout = 10):
     params = {
         "q": query,
         "limit": limit,
-        "fields": "title,author_name,first_publish_year",
+        "fields": fields,
     }
 
     try:

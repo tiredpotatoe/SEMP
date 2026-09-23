@@ -1,44 +1,44 @@
-title,author_name,first_publish_year
-Python For Data Analysis,Wes McKinney,2012
-Fluent Python,Luciano Ramalho,2015
-Black Hat Python,"Justin Seitz, Tim Arnold",2014
-Python Cookbook,"Alex Martelli, David Ascher, David M. Beazley, Brian K. Jones",2002
-Core Python Programming,R. Nageswara Rao,2016
-Automate the Boring Stuff with Python,Al Sweigart,2015
-Think Python,"Allen B. Downey, Allen Downey",2009
-Python,Joshua Welsh,2017
-Core Python programming,Wesley Chun,2006
-Effective Python,Brett Slatkin,2015
-"Python Crash Course, 2nd Edition",Eric Matthes,2019
-"Python, The Complete Reference",Martin C. Brown,2001
-"Python Crash Course, 3rd Edition",Eric Matthes,2022
-Beginning Python,James R. Payne,2010
-Head First Python,Paul Barry,2010
-Deep Learning with Python,"Francois Chollet, Matthew Watson, Matthew Watson",2017
-Python,Byron Francis,2016
-Data science from scratch,Joel Grus,2015
-Introduction to Machine Learning with Python,"Andreas C. Mueller, Sarah Guido",2016
-Python for Everybody,Charles R. Severance,2016
-Python crash course,Eric Matthes,2015
-Python Basics,"David Amos, Dan Bader, Joanna Jablonski, Fletcher Heisler",2021
-Pythons' Autobiography by the Pythons,"Monty Python, Graham Chapman, John Cleese, Terry Gilliam, Eric Idle, Terry Jones, Michael Palin, et al, Bob McCabe",2003
-Programming in Python 3,Mark Summerfield,2009
-Python Distilled,David M. Beazley,2021
-Python,Martin Evans,2018
-Python Programming,Reema Thareja,2019
-Python Playground,Mahesh Venkitachalam,2015
-Python for dummies,"Stef Maruch, Aahz Maruch",2006
-Python in a Nutshell,"Alex Martelli, Anna Ravenscroft, Steve Holden",2002
-Python for Kids,Jason R. Briggs,2012
-Starting out with Python,Tony Gaddis,2008
-Python programming,John M. Zelle,2003
-Let Us Python,Yashavant Kanetkar,2019
-Python Data Science Handbook,Jake VanderPlas,2016
-PYTHON Exercises,Ray Yao,2021
-Michael Palin Diaries 1969-1979,Michael Palin,2006
-Python,Andy Vickler,2021
-Python All-in-One For Dummies,"John Shovic, Alan Simpson",2019
-Data Structures and Algorithms in Python,"Michael T. Goodrich, Roberto Tamassia, Michael H Goldwasser",2012
-Python Programming,Sarah Stewart,2019
-Python Programming Crash Course,Alex Jaxson,2022
-Introduction To Computation And Programming Using Python,John Guttag,2013
+edition_count,title,author_name,first_publish_year
+8,Python For Data Analysis,['Wes McKinney'],2012
+6,Fluent Python,['Luciano Ramalho'],2015
+3,Black Hat Python,"['Justin Seitz', 'Tim Arnold']",2014
+7,Python Cookbook,"['Alex Martelli', 'David Ascher', 'David M. Beazley', 'Brian K. Jones']",2002
+5,Core Python Programming,['R. Nageswara Rao'],2016
+8,Automate the Boring Stuff with Python,['Al Sweigart'],2015
+11,Think Python,"['Allen B. Downey', 'Allen Downey']",2009
+1,Python,['Joshua Welsh'],2017
+2,Core Python programming,['Wesley Chun'],2006
+8,Effective Python,['Brett Slatkin'],2015
+1,"Python Crash Course, 2nd Edition",['Eric Matthes'],2019
+3,"Python, The Complete Reference",['Martin C. Brown'],2001
+1,"Python Crash Course, 3rd Edition",['Eric Matthes'],2022
+6,Beginning Python,['James R. Payne'],2010
+9,Head First Python,['Paul Barry'],2010
+7,Deep Learning with Python,"['Francois Chollet', 'Matthew Watson', 'Matthew Watson']",2017
+1,Python,['Byron Francis'],2016
+4,Data science from scratch,['Joel Grus'],2015
+2,Introduction to Machine Learning with Python,"['Andreas C. Mueller', 'Sarah Guido']",2016
+4,Python for Everybody,['Charles R. Severance'],2016
+2,Python crash course,['Eric Matthes'],2015
+1,Python Basics,"['David Amos', 'Dan Bader', 'Joanna Jablonski', 'Fletcher Heisler']",2021
+18,Pythons' Autobiography by the Pythons,"['Monty Python', 'Graham Chapman', 'John Cleese', 'Terry Gilliam', 'Eric Idle', 'Terry Jones', 'Michael Palin', 'et al', 'Bob McCabe']",2003
+8,Programming in Python 3,['Mark Summerfield'],2009
+3,Python Distilled,['David M. Beazley'],2021
+10,Python,['Martin Evans'],2018
+2,Python Programming,['Reema Thareja'],2019
+2,Python Playground,['Mahesh Venkitachalam'],2015
+5,Python for dummies,"['Stef Maruch', 'Aahz Maruch']",2006
+8,Python in a Nutshell,"['Alex Martelli', 'Anna Ravenscroft', 'Steve Holden']",2002
+4,Python for Kids,['Jason R. Briggs'],2012
+4,Starting out with Python,['Tony Gaddis'],2008
+2,Python programming,['John M. Zelle'],2003
+2,Let Us Python,['Yashavant Kanetkar'],2019
+2,Python Data Science Handbook,['Jake VanderPlas'],2016
+1,PYTHON Exercises,['Ray Yao'],2021
+13,Michael Palin Diaries 1969-1979,['Michael Palin'],2006
+2,Python,['Andy Vickler'],2021
+6,Python All-in-One For Dummies,"['John Shovic', 'Alan Simpson']",2019
+3,Data Structures and Algorithms in Python,"['Michael T. Goodrich', 'Roberto Tamassia', 'Michael H Goldwasser']",2012
+1,Python Programming,['Sarah Stewart'],2019
+1,Python Programming Crash Course,['Alex Jaxson'],2022
+3,Introduction To Computation And Programming Using Python,['John Guttag'],2013
