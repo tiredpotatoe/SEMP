@@ -1,24 +1,30 @@
 import requests
 import logging
-from utils.config import OPENLIBRARY_SEARCH_URL, FETCH_LIMIT, SEARCH_QUERY
 
 logger = logging.getLogger(__name__)
 
-
-def fetch_books(limit):
+def fetch_books(search_url, query, limit):
     """
-    Fetches books from the OpenLibrary search endpoint with the given limit.
-    Returns the raw results from the API as a dictionary (parsed JSON).
+    Fetches books from the OpenLibrary search endpoint.
+
+    Args:
+        search_url: the OpenLibrary search API base URL.
+        query: search term (e.g. a subject/topic).
+        limit: max number of books to request.
+
+    Returns:
+        A list of raw book dicts from the API's "docs" field.
+        Returns an empty list if the request fails.
     """
     params = {
-        "q": SEARCH_QUERY,
+        "q": query,
         "limit": limit,
         "fields": "title,author_name,first_publish_year",
     }
 
     try:
         response = requests.get(
-            OPENLIBRARY_SEARCH_URL,
+            search_url,
             params=params,
             timeout=10,
         )
@@ -32,11 +38,3 @@ def fetch_books(limit):
 
     data = response.json()
     return data.get("docs", [])
-# test
-
-if __name__ == "__main__":
-    logging.basicConfig(level=logging.INFO)
-    books = fetch_books(50)
-    print(f"Fetched {len(books)} books")
-    for b in books[:3]:
-        print(b)

@@ -29,15 +29,3 @@ def write_books_csv(books: list[dict], path: Path) -> None:
             })
 
     logger.info(f"Wrote {len(books)} books to {path}")
-
-#test
-if __name__ == "__main__":
-    logging.basicConfig(level=logging.INFO)
-
-    fake_books = [
-        {"title": "Test Book One", "author_name": ["Author A"], "first_publish_year": 2010},
-        {"title": "Test Book Two", "author_name": ["Author B", "Author C"], "first_publish_year": 2021},
-        {"title": "No Author Book", "author_name": [], "first_publish_year": 1999},
-    ]
-
-    write_books_csv(fake_books, Path("output/test_books.csv"))
