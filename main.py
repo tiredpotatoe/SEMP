@@ -25,7 +25,7 @@ def main():
     filtered_books = filter_books(raw_books, YEAR_CUTOFF)
     logger.info(f"{len(filtered_books)} books published after {YEAR_CUTOFF}.")
 
-    write_books_csv(filtered_books, OUTPUT_CSV_PATH, FIELDS)
+    write_books_csv(filtered_books, OUTPUT_CSV_PATH)
 
 
 if __name__ == "__main__":

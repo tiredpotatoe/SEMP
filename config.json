@@ -1,7 +1,7 @@
 {
     "openlibrary_search_url": "https://openlibrary.org/search.json",
-    "search_query": "python",
-    "fields": "edition_count,title,author_name,first_publish_year",
+    "search_query": "book",
+    "fields": "title,author_name,first_publish_year",
     "fetch_limit": 50,
     "request_timeout": 10,
     "year_cutoff": 2000,

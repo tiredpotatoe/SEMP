@@ -5,27 +5,25 @@ from pathlib import Path
 logger = logging.getLogger(__name__)
 
 
-def write_books_csv(books: list[dict], path: Path, fields: str) -> None:
+def write_books_csv(books: list[dict], path: Path) -> None:
     """
-    Write a list of book dicts to a CSV file.
+    Write a list of book dictionaries to a CSV file.
 
     Args:
-        books: list of dicts.
+        books: list of book dictionaries.
         path: destination file path for the CSV.
-        fields: comma separated string of field names to use as CSV headers.
     """
+    if not books:
+        logger.info("No books to write.")
+        return
+
     path.parent.mkdir(parents=True, exist_ok=True)
 
-    fieldnames = [f.strip() for f in fields.split(",")]
+    fieldnames = books[0].keys()
 
     with open(path, mode="w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
         writer.writeheader()
-
-        for book in books:
-            row = {}
-            for field in fieldnames:
-                    row[field] = book.get(field, "Unknown")
-            writer.writerow(row)
+        writer.writerows(books)
 
     logger.info(f"Wrote {len(books)} books to {path}")
