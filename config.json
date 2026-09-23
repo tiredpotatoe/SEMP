@@ -1,0 +1,7 @@
+{
+    "openlibrary_search_url": "https://openlibrary.org/search.json",
+    "search_query": "python",
+    "fetch_limit": 50,
+    "year_cutoff": 2000,
+    "output_csv_path": "fetched_books.csv"
+  }
