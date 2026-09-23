@@ -11,4 +11,5 @@ OPENLIBRARY_SEARCH_URL = config["openlibrary_search_url"]
 SEARCH_QUERY = config["search_query"]
 FETCH_LIMIT = config["fetch_limit"]
 YEAR_CUTOFF = config["year_cutoff"]
-OUTPUT_CSV_PATH = Path(config["output_csv_path"])   # <-- wrap in Path()
+REQUEST_TIMEOUT = config["request_timeout"]
+OUTPUT_CSV_PATH = Path(config["output_csv_path"])  

@@ -2,6 +2,7 @@
     "openlibrary_search_url": "https://openlibrary.org/search.json",
     "search_query": "python",
     "fetch_limit": 50,
+    "request_timeout": 10,
     "year_cutoff": 2000,
     "output_csv_path": "output/fetched_books.csv"
   }

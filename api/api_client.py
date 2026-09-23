@@ -3,7 +3,7 @@ import logging
 
 logger = logging.getLogger(__name__)
 
-def fetch_books(search_url, query, limit):
+def fetch_books(search_url, query, limit, request_timeout = 10):
     """
     Fetches books from the OpenLibrary search endpoint.
 
@@ -26,7 +26,7 @@ def fetch_books(search_url, query, limit):
         response = requests.get(
             search_url,
             params=params,
-            timeout=10,
+            timeout=request_timeout,
         )
         response.raise_for_status()
     except requests.exceptions.Timeout:
