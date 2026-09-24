@@ -37,6 +37,16 @@ python -m main
 }
 ```
 
+| کلید | توضیح |
+|---|---|
+| `openlibrary_search_url` | آدرس endpoint جستجوی OpenLibrary. نیازی به تغییر نیست مگر اینکه API آدرسش عوض بشه. |
+| `search_query` | عبارتی که با پارامتر `q` جستجو می‌شه (مثلاً `"science"`، `"tolkien"`، ...). **نکته:** OpenLibrary کوئری‌های خیلی عمومی مثل `"the"` رو رد می‌کنه (به بخش «تصمیمات طراحی» نگاه کن)، پس هر مقداری که می‌ذاری باید یه عبارت جستجوی معنادار باشه. |
+| `fields` | مشخص می‌کنه کدوم فیلدها برای هر کتاب برگردونده بشه. دو حالت داره:<br>• `"*"` → همه‌ی فیلدهای موجود برای هر کتاب برگردونده می‌شه (پرهزینه‌تره، ولی چون `csv_writer.py` ستون‌ها رو داینامیک می‌سازه، با هر مقدار fields کار می‌کنه).<br>• لیست کاما-جدا از اسم فیلدها، مثلاً `"title,author_name,first_publish_year,isbn"`. اسم فیلدهای معتبر رو می‌تونی توی [مستندات رسمی Search API](https://openlibrary.org/dev/docs/api/search) و [شمای Solr در گیت‌هاب OpenLibrary](https://github.com/internetarchive/openlibrary/blob/master/openlibrary/plugins/worksearch/schemes/works.py) پیدا کنی. فیلدهای پرکاربرد: `title`، `author_name`، `first_publish_year`، `isbn`، `cover_i`، `key`، `edition_count`، `language`. |
+| `fetch_limit` | چند تا کتاب از API درخواست بشه (معادل پارامتر `limit`). |
+| `request_timeout` | چند ثانیه صبر کنه قبل از اینکه درخواست رو timeout بزنه. |
+| `year_cutoff` | فقط کتاب‌هایی که `first_publish_year` بزرگ‌تر از این عدد دارن نگه داشته می‌شن. |
+| `output_csv_path` | مسیر فایل CSV خروجی، نسبت به ریشه‌ی پروژه. |
+
 ## ساختار پروژه
 
 ```
