@@ -38,6 +38,14 @@ python -m main
 }
 ```
 
+- `search_query` — عبارت جستجو (`q`). کوئری‌های عمومی مثل `"the"` رد می‌شوند.
+- `fields` — `"*"` برای همه‌ی فیلدها، یا لیست کاما-جدا مثل `"title,author_name,isbn"`. فیلدهای معتبر: [مستندات Search API](https://openlibrary.org/dev/docs/api/search).
+- `fetch_limit` — تعداد کتاب درخواستی.
+- `request_timeout` — ثانیه‌های timeout.
+- `year_cutoff` — فقط کتاب‌های بعد از این سال.
+- `output_csv_path` — مسیر فایل خروجی.
+
+---
 ## ساختار پروژه
 
 ```
