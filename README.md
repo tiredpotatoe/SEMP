@@ -28,25 +28,16 @@ python -m main
 ```json
 {
   "openlibrary_search_url": "https://openlibrary.org/search.json",
-  "search_query": "book",
-  "fields": "*",
-  "fetch_limit": 50,
-  "request_timeout": 15,
-  "year_cutoff": 2000,
-  "output_csv_path": "output/fetched_books.csv"
+
+  "search_query": "book",                        // search term (q param) — generic queries like "the" get rejected by the API
+  "fields": "*",                                  // "*" = all fields, or comma-separated e.g. "title,author_name,isbn" — see https://openlibrary.org/dev/docs/api/search
+  "fetch_limit": 50,                               // number of books to request
+  "request_timeout": 15,                           // seconds before the request times out
+  "year_cutoff": 2000,                             // only keep books published after this year
+  "output_csv_path": "output/fetched_books.csv"    // path of the resulting CSV file
 }
 ```
 
-<div dir="rtl">
-
-  - `search_query` — عبارت جستجو (`q`). کوئری‌های عمومی مثل `"the"` رد می‌شوند.
-  - `fields` — `"*"` برای همه‌ی فیلدها، یا لیست کاما-جدا مثل `"title,author_name,isbn"`. فیلدهای معتبر: [مستندات Search API](https://openlibrary.org/dev/docs/api/search).
-  - `fetch_limit` — تعداد کتاب درخواستی.
-  - `request_timeout` — ثانیه‌های timeout.
-  - `year_cutoff` — فقط کتاب‌های بعد از این سال.
-  - `output_csv_path` — مسیر فایل خروجی.
-
-</div>
 
 ## ساختار پروژه
 
